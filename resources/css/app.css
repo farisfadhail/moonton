@@ -7,6 +7,14 @@
     display: none !important;
 }
 
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
 @layer components {
     [type="text"],
     [type="email"],
