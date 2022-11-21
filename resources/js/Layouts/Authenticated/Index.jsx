@@ -6,7 +6,7 @@ export default function Authenticated({ auth, children }) {
         <>
             <div className="mx-auto max-w-screen hidden lg:block">
                 {/* START: Sidebar */}
-                <Sidebar />
+                <Sidebar auth={auth} />
                 {/* END: Sidebar */}
 
                 {/* START: Content */}
@@ -16,10 +16,6 @@ export default function Authenticated({ auth, children }) {
                         <Topbar name={auth.user.name} />
                         {/* Similar to ({ Auth::user()->name }) */}
                         {/* END: Topbar */}
-                        {/* START: Featured */}
-                        {/* END: Featured */}
-                        {/* START: Browse */}
-                        {/* END: Browse */}
                         <main>{children}</main>
                     </div>
                 </div>
