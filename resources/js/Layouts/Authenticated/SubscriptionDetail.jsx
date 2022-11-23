@@ -31,7 +31,9 @@ export default function subscriptionDetail({
                             {remainingActiveDays} of {activeDays} hari
                         </div>
                         <div className="rounded-full w-full h-[6px] bg-[#f1f1f1]">
-                            <div className="rounded-full h-full w-2/12 bg-alerange"></div>
+                            <div
+                                className={`rounded-full h-full bg-alerange ${loadingProgress()}`}
+                            ></div>
                         </div>
                     </div>
                 </div>
