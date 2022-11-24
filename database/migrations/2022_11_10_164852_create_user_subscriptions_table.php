@@ -21,7 +21,7 @@ return new class extends Migration
             $table->unsignedInteger('price');
             $table->dateTime('expired_date')->nullable();
             $table->string('payment_status')->default('pending');
-            $table->string('snapToken')->nullable();
+            $table->string('snap_token')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
